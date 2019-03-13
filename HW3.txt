@@ -1,0 +1,32 @@
+Colin Casazza
+CS570 
+HW #3
+3/13/19
+
+A periodic real time schedule has an operating system overhead of .05.
+Process oxygen monitor has a period of 2 Hz and requires 200 ms to operate.
+Process carbon monoxide monitor has a period of 1 Hz and requires 10 ms to
+operate. These processes are schedulable.
+
+a. Show that they are schedulable.
+    -lcm(p1, p2) = 2hz
+    -2s to schedule a total of 210ms of user time
+
+b. Create a plot showing Hz vs required time indicating the limits of
+third process that could be scheduled.
+    - no answer
+
+3. A round robin scheduler has a time quantum of 10 ms. If a process has a
+CPU burst of 35 ms and is not preempted other than by a quantum expiration,
+how many times will it be scheduled before it completes?
+    - The process will get scheduled 4 times before it completes fully. 
+
+4. Priority schedulers are prone to starvation, what modification can be made to
+the basic algorithm to prevent starvation.
+    - An easy fix to starvation can be implementing 'ageing.' Every n processor ticks,
+    processes age (their priority increase) by an deacreasingly increasing rate, inversely proportional to their current priority level, 
+
+
+5. Why do we typically not use admission schedulers on personal computing
+devices?
+    - Admission schedulers are generally used for infrequent use or very heavy loads which means they're optimized to work best in conditions that are not optimal for the average user. These schedulers would result in slower devices because they run infrequently, but would also be less efficient because average user load is below the threashhold normally used with admission schedulers.
