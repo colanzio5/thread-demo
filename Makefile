@@ -1,5 +1,5 @@
 CC=g++ # define the compiler to use
-TARGET=threaddemo # define the name of the executable
+TARGET=thread # define the name of the executable
 SOURCES=thread_demo.c worker.c
 CFLAGS=-O3
 LFLAGS=
